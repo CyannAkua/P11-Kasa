@@ -23,7 +23,7 @@ font-size: 18px;
    text-decoration: red underline;
    padding-bottom: 50px;
 }
-@media (min-height:800px)
+@media (min-height:1250px)
  {
     #pageNotFound + #footer{
         bottom:0 !important
@@ -36,4 +36,10 @@ font-size: 18px;
     #pageNotFound h2{
         font-size: 18px;
     }
+    @media (min-height:800px)
+ {
+    #pageNotFound + #footer{
+        bottom:0 !important
+    }
+}
 }

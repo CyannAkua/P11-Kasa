@@ -24,7 +24,12 @@
         margin: -10px 20px;
         padding-bottom: 20px;
     }
-}
-@media ( min-height:800px) {
+    @media ( min-height:800px) {
     #About{padding-bottom: 10%;}
+}
+}
+@media (min-height:990px) {
+    #About + #footer {
+        bottom: 0;
+    }
 }
