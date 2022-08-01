@@ -1,0 +1,22 @@
+#Banner {
+    display: flex;
+    padding: 40px 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+#Banner a {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #FF6060;
+    padding: 0 27px;
+    text-decoration: none;
+}
+#Banner a:hover{
+    text-decoration: underline;
+}

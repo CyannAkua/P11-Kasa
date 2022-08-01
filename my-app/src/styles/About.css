@@ -1,0 +1,17 @@
+#About{
+    display: flex;
+    flex-flow: column nowrap;
+    gap:31px 0;
+    margin:0 0 150px;
+}
+#About .dropdown{
+    width: auto;
+    margin: 0 14.5vw;
+}
+#About .extendedtext{
+    width: auto;
+    margin: -10px 14.5vw 0;
+}
+#About .widePic img{
+    height: 223px !important;
+}

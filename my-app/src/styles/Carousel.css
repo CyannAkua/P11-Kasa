@@ -1,0 +1,49 @@
+#carousel {
+  display: grid;
+  grid-template: 415px/1fr;
+  width: 100%;
+  height: 415px;
+}
+#navigation {
+  grid-area: 1/1/2/2;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 5% auto 5%;
+}
+#navigation #left {
+  height: 79.2px;
+  width: 46.7px;
+  transform: rotate(90deg);
+}
+#navigation #right {
+  height: 79.2px;
+  width: 46.7px;
+  transform: rotate(-90deg);
+}
+#navigation p {
+  align-self: end;
+  justify-self: center;
+  grid-area: 1/2/2/3;
+  color: white;
+  font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+margin: 25px;
+}
+#navigation .btn{
+    background:none;
+    border:none
+}
+#imageHold {
+  grid-area: 1/1/2/2;
+}
+#imageHold img {
+  position: relative;
+  height: 415px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}

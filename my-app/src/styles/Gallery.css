@@ -1,0 +1,33 @@
+#galleryHold{
+    display: grid;
+    gap: 3.5vw;
+    margin:4.6vw 4.2vw;
+    grid-template-columns: repeat(3 , 1fr);
+}
+#galleryHold a{
+    text-decoration: none;
+}
+#gallery{
+    display:block;
+    margin: 50px 100px -5vh;
+    border-radius:25px;
+    background: #F6F6F6;
+    height:80vh;
+    overflow: scroll;
+}
+@media (max-width: 1000px){
+    #galleryHold{
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media (max-width: 700px){
+    #galleryHold{
+        margin:20px;
+        grid-template-columns: 1fr;
+    }
+    #gallery{
+        display: block;
+        margin: 20px  0 -1vh;
+        background: none;
+    }
+}

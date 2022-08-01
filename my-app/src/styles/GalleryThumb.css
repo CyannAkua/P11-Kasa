@@ -1,0 +1,48 @@
+.galleryThumb{
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    width: fit-content;
+    align-items: end;
+}
+.galleryThumb div{
+    grid-area: 1/1/1/1;
+    position: relative;
+}
+.galleryThumb p{
+    color: white;
+    grid-area: 1/1/1/1;
+    padding: 20px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    width: 70%;
+    z-index: 1;
+}
+.galleryThumb img{
+    width:100%;
+    aspect-ratio:1/1;
+    left: 0px;
+    top: 0px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.galleryThumb .overlay{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    width:100%;
+    aspect-ratio:1/1;
+    bottom: 4px;
+    position: absolute;
+}
+@media (max-width: 700px){
+    .galleryThumb img{
+        height: 255px;
+        width:100%;}
+        .galleryThumb .overlay{
+            height: 255px;
+            width:100%;}
+            .galleryThumb{
+                width: auto;
+            }
+}

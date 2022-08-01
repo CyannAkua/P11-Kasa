@@ -1,0 +1,25 @@
+#pageNotFound{
+    font-family: 'Montserrat';
+    display: flex;
+align-items: center;
+text-align: center;
+flex-direction: column;
+}
+#pageNotFound h1{
+    font-weight: 700;
+    font-size: 288px;
+       color: #FF6060;
+       margin-bottom: 0;
+    }
+#pageNotFound h2{
+    font-weight: 500;
+    font-size: 36px;
+       color: #FF6060;
+       margin-bottom:180px ;
+    }
+#pageNotFound h3{
+font-weight: 500;
+font-size: 18px;
+   color: #FF6060;
+   text-decoration: red underline;
+}
