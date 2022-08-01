@@ -8,16 +8,16 @@
   grid-area: 1/1/2/2;
   z-index: 1;
   display: grid;
-  grid-template-columns: 5% auto 5%;
+  grid-template-columns: 20% auto 20%;
+}
+#navigation img{
+  height: 46.68px;
+  width: 79.2px;
 }
 #navigation #left {
-  height: 79.2px;
-  width: 46.7px;
   transform: rotate(90deg);
 }
 #navigation #right {
-  height: 79.2px;
-  width: 46.7px;
   transform: rotate(-90deg);
 }
 #navigation p {
@@ -37,6 +37,12 @@ margin: 25px;
     background:none;
     border:none
 }
+#navigation .btn.left{
+  justify-self: left;
+}
+#navigation .btn.right{
+  justify-self: right;
+}
 #imageHold {
   grid-area: 1/1/2/2;
 }
@@ -46,4 +52,21 @@ margin: 25px;
   width: 100%;
   object-fit: cover;
   border-radius: 25px;
+}
+@media (max-width:800px) {
+  #carousel {
+    grid-template: 255px/1fr;
+    width: 100%;
+    height: 255px;
+  }
+  #imageHold img{
+    height: 255px;
+  }
+  #navigation img{
+    height: 11.67px;
+    width: 19.8px;
+  }
+  #navigation {
+    grid-template-columns: 20% auto 20%;
+  }
 }

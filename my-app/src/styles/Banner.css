@@ -2,7 +2,7 @@
     display: flex;
     padding: 40px 100px;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -19,4 +19,17 @@
 }
 #Banner a:hover{
     text-decoration: underline;
+}
+
+@media ( max-width:800px) {
+    #Banner {
+        padding:20px;
+    }
+    #Banner img {
+        max-width:70% ;
+    }
+    #Banner a {
+        font-size: 12px;
+        padding:0px 5px;
+    }
 }

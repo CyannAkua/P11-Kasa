@@ -1,5 +1,5 @@
 import WidePic from "../components/WidePic";
-import aboutPic from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.png';
+import aboutPic from '../assets/kalen-emsley-Bkci_8qcdvQ-unsplash 2.jpg';
 import Dropdown from "../components/Dropdown";
 import '../styles/About.css'
 export default function About(){

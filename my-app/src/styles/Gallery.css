@@ -9,7 +9,7 @@
 }
 #gallery{
     display:block;
-    margin: 50px 100px -5vh;
+    margin: 40px 100px -5vh;
     border-radius:25px;
     background: #F6F6F6;
     height:80vh;
@@ -22,7 +22,7 @@
 }
 @media (max-width: 700px){
     #galleryHold{
-        margin:20px;
+        margin:0 20px 20px;
         grid-template-columns: 1fr;
     }
     #gallery{
