@@ -25,3 +25,6 @@
         padding-bottom: 20px;
     }
 }
+@media ( min-height:800px) {
+    #About{padding-bottom: 10%;}
+}
