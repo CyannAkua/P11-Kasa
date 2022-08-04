@@ -2,7 +2,7 @@ import Tag from '../components/Tag';
 import data from '../data/logements.json'
 import Dropdown from '../components/Dropdown';
 import '../styles/Housing.css'
-import {useParams} from 'react-router-dom';
+import {useParams,Navigate} from 'react-router-dom';
 import star from '../assets/star.svg'
 import Carousel from '../components/Carousel'
 
@@ -10,6 +10,11 @@ export default function Housing(){
     const { id } = useParams()
     let thisdata = data.find(data => data.id == id );
     const rating = [1,2,3,4,5]
+    if(thisdata == undefined){
+        return(
+            <Navigate to="/404" replace={true}/>
+        )
+    }
     return(
         <div id='housing'>
             <Carousel picture={thisdata.pictures}/>
