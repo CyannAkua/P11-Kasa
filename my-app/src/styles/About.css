@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     gap:31px 0;
-    margin:0 0 50px;
+    margin:0 0 100px;
 }
 #About .dropdown{
     width: auto;
@@ -23,13 +23,5 @@
     #About .extendedtext{
         margin: -10px 20px;
         padding-bottom: 20px;
-    }
-    @media ( min-height:800px) {
-    #About{padding-bottom: 10%;}
-}
-}
-@media (min-height:990px) {
-    #About + #footer {
-        bottom: 0;
     }
 }
