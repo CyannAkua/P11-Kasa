@@ -10,7 +10,7 @@ function Dropdown(props){
             <div className='dropdown'>
                 <p>{props.title}</p>
                 <button className='btn' onClick={()=> setShowMore(!showMore)}>
-                {showMore ? <img className='dropdown_arrow open' src={arrow}/> : <img className='dropdown_arrow' src={arrow}/>}
+                {showMore ? <img className='dropdown_arrow open' src={arrow} alt=''/> : <img className='dropdown_arrow' src={arrow} alt=''/>}
             </button>
             </div>
             {showMore ? <div className='extendedtext'>

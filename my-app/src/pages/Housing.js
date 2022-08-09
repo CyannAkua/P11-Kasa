@@ -8,9 +8,9 @@ import Carousel from '../components/Carousel'
 
 export default function Housing(){
     const { id } = useParams()
-    let thisdata = data.find(data => data.id == id );
+    let thisdata = data.find(data => data.id === id );
     const rating = [1,2,3,4,5]
-    if(thisdata == undefined){
+    if(thisdata === undefined){
         return(
             <Navigate to="/404" replace={true}/>
         )
@@ -31,16 +31,16 @@ export default function Housing(){
             </div>
             <div id= 'host'>
                 <p>{thisdata.host.name}</p>
-                <img src={thisdata.host.picture}/>
+                <img src={thisdata.host.picture} alt=''/>
             </div>
             <div id='rating'>
                 {
                 rating.map(index=> {
                     if(index <= parseInt(thisdata.rating)){
-                       return(<img key={index} src={star} className='filled'></img>) 
+                       return(<img key={index} src={star} alt='' className='filled'></img>) 
                     }
                     else{
-                        return(<img key={index} src={star}></img>)
+                        return(<img key={index} src={star} alt=''></img>)
                     }
                     })
             }
